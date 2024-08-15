@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body{
+            height: 4000px;
+        }
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        li{
+            /* display: inline; */
+            list-style: square outside;
+        }
+        header{
+            background-color: black;
+            color: wheat;
+            height: 70px;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+        .container{
+            background-color: aqua;
+            height: 75vh;
+            width: 50vw;
+            margin: auto;
+            /* position: relative; */
+            z-index: 20;
+
+        }
+        .box{
+            background-color: greenyellow;
+            height: 180px;
+            width: 180px;
+            /* position: relative;
+            top: 4px;
+            left: 250px; */
+            /* position: absolute;
+            top: 0px; */
+        }
+        .box2{
+            background-color: blue;
+            height: 180px;
+            width: 180px;
+            position: fixed;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex odio, alias exercitationem placeat fuga, veniam perferendis autem similique illum, fugiat corporis esse ratione laudantium aut error eligendi eaque amet earum rerum nemo blanditiis.
+        <div class="box">
+            I am box.
+        </div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur.</div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+    </ul>
+</body>
+</html>
