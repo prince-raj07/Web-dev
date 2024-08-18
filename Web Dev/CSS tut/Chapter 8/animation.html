@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: prince;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            animation-name: prince;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+        @keyframes prince {
+            from
+                {
+                    width: 300px;
+                    height: 300px;
+                }
+            
+            to
+                {
+                    width : 100vw;
+                    height: 100vh;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is me</div>
+    </div>
+    <img src="istockphoto-1919393325-1024x1024.jpg" alt="zebra">
+</body>
+</html>

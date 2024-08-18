@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: yellow;
+            height: 120vh;
+        }
+
+        .box{
+            display: inline block;
+            border: 2px solid black;
+            /* transform: translate(600px,100px) rotate(4deg); */
+            /* transform-origin: left; */
+            /* transform-origin: 0; */
+            /* transform: scaleX(4);
+            transform: scaleY(4); */
+            /* transform: scale(4,4); */
+            /* transform: skew(10deg,10deg); */
+        }
+        img:hover{
+            width :56px;
+            height: 100px;
+        }
+        img{
+            width: 90vw;
+            height: 110vh;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s; */
+            transition: width 2s ease-in 0s , height 3s ease-in 0s ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="istockphoto-1919393325-1024x1024.jpg" alt="zebra">
+    </div>
+    </div>
+</body>
+</html>
